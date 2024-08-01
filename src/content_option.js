@@ -1,15 +1,15 @@
 const logotext = "Carlos Haro";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Carlos Haro Portfolio",
+    description: "I’m Carlos Haro a data scientist, Backend  developer,currently working in Canada",
 };
 
 const introdata = {
     title: "I’m Carlos Haro",
     animated: {
         first: "I love coding",
-        second: "I code preferly in Python",
-        third: "I prefer backend services",
+        second: "I a huge fan of Python",
+        third: "If you need a application I am your backen developer.",
     },
     description: "I am a sofware engineer interested in develop application and chatbot in Python",
     your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
