@@ -16,7 +16,7 @@ const Headermain = () => {
   return (
     <>
       <header className="fixed-top site__header">
-        <div className="d-flex align-items-center justify-content-between">
+        <div className="navbar d-flex align-items-center justify-content-between">
           <Link  className="navbar-brand nav_ac" to="/">
             {logotext}
           </Link>
@@ -25,7 +25,6 @@ const Headermain = () => {
           <button className="menu__button  nav_ac" onClick={handleToggle}>
             {!isActive ? <VscClose /> : <VscGrabber />}
           </button>
-          
           </div>
         </div>
 
@@ -56,7 +55,7 @@ const Headermain = () => {
             <a href={socialprofils.github}>Github</a>
             <a href={socialprofils.twitter}>Twitter</a>
             </div>
-            <p className="copyright m-0">copyright __ {logotext}</p>
+            <p className="copyright m-0">copyright - {logotext}</p>
           </div>
         </div>
       </header>

@@ -4,6 +4,18 @@
     padding-right: 10px;
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure this is higher than other elements */  
+    padding: 10px 20px; /* Adjust padding as needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
 .menu__button {
     color: var(--text-color);
 }
@@ -28,11 +40,13 @@
     background: var(--primary-color);
     font-size: 1.25rem;
     font-family: Marcellus;
-    color: var(--text-color-2);
+   /*  color: var(--text-color-2); */
     line-height: 2;
     height: 50px;
     font-weight: bold;
     z-index: 1000;
+    background-color: transparent;
+/*     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 }
 
 .nav_ac:hover {

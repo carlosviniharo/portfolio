@@ -6,6 +6,9 @@
     --text-color-2: #fff;
     --text-color-3: rgb(204, 0, 0);
     --overlay-color: rgb(12 12 12 / 63%);
+    --navbar-bg-light: rgba(255, 255, 255, 0.8); /* Light theme background */
+    --navbar-bg-dark: rgba(30, 30, 30, 0.9); /* Dark theme background */
+    --navbar-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow */
 }
 
 [data-theme="light"] {
@@ -16,7 +19,14 @@
     --text-color-2: #000;
     --text-color-3: rgb(204, 0, 0);
     --overlay-color: rgb(255 255 255 / 70%);
+    background-color: var(--navbar-bg-light);
+    box-shadow: var(--navbar-box-shadow);
 }
+
+[data-theme='dark'] .navbar {
+    background-color: var(--navbar-bg-dark);
+    box-shadow: none; /* You can adjust the shadow or remove it for dark theme */
+  } 
 
 html,
 body {
