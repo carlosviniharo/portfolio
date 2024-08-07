@@ -40,7 +40,7 @@ export const ContactUs = () => {
           console.log(result.text);
           setFormdata({
             loading: false,
-            alertmessage: "SUCCESS! ,Thankyou for your messege",
+            alertmessage: "Thank you for reaching me out, I will be in contact soon!",
             variant: "success",
             show: true,
           });
@@ -101,9 +101,9 @@ export const ContactUs = () => {
               </a>
               <br />
               <br />
-              {contactConfig.hasOwnProperty("YOUR_FONE") ? (
+              {contactConfig.hasOwnProperty("YOUR_PHONE") ? (
                 <p>
-                  <strong>Phone:</strong> {contactConfig.YOUR_FONE}
+                  <strong>Phone:</strong> {contactConfig.YOUR_PHONE}
                 </p>
               ) : (
                 ""
@@ -114,24 +114,26 @@ export const ContactUs = () => {
           <Col lg="7" className="d-flex align-items-center">
             <form onSubmit={handleSubmit} className="contact__form w-100">
               <Row>
-                <Col lg="6" className="form-group">
+                <Col lg="12" className="form-group">
                   <input
                     className="form-control"
                     id="name"
                     name="name"
-                    placeholder="Name"
+                    placeholder="Your name"
                     value={formData.name || ""}
                     type="text"
                     required
                     onChange={handleChange}
                   />
                 </Col>
-                <Col lg="6" className="form-group">
+                </Row>
+                <Row>
+                <Col lg="12" className="form-group">
                   <input
                     className="form-control rounded-0"
                     id="email"
                     name="email"
-                    placeholder="Email"
+                    placeholder="Your email"
                     type="email"
                     value={formData.email || ""}
                     required
@@ -145,7 +147,7 @@ export const ContactUs = () => {
                 name="message"
                 placeholder="Message"
                 rows="5"
-                value={formData.message}
+                value={formData.message || ""}
                 onChange={handleChange}
                 required
               ></textarea>
