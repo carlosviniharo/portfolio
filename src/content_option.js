@@ -1,14 +1,14 @@
 const logotext = "Carlos Haro";
 const meta = {
     title: "Carlos Haro Portfolio",
-    description: "I’m Carlos Haro a backend  developer, an aspirant to data engineer,  currently living in Canada",
+    description: "I’m a backend  developer, who aspire to become a data engineer, currently living in Canada",
 };
 
 const introdata = {
     title: "I’m Carlos Haro",
     animated: {
         first: "I love coding",
-        second: "I a huge fan of Python",
+        second: "I am a huge fan of Python",
         third: "If you want to build an application I am your backend developer.",
     },
     description: "I am a sofware engineer interested in develop application and chatbots in Python",
@@ -17,12 +17,12 @@ const introdata = {
 
 const dataabout = {
     title: "A bit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    aboutme: "",
 };
 const worktimeline = [{
         jobtitle: "Software Engineer",
         where: "Baker Hughes - Bristol",
-        date: "2019, 2020",
+        date: "2019 - 2020",
     },
     {
         jobtitle: "Robotics Tutor",
@@ -32,7 +32,7 @@ const worktimeline = [{
     {
         jobtitle: "Backend Software Developer",
         where: "Jakayv S.A",
-        date: "2022 - ....",
+        date: "2023 - 2024",
     },
 ];
 
@@ -61,19 +61,19 @@ const skills = [{
 
 const services = [{
         title: "Database Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        description: "",
     },
     {
         title: "REST API services",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        description: "",
     },
     {
         title: "Dockerization",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        description: "",
     },
     {
         title: "Chatbots implementation",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        description: "",
     },
 ];
 
@@ -81,69 +81,13 @@ const dataportfolio = [{
         img: "https://picsum.photos/400/?grayscale",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/800/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/550/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
+    }
 ];
 
 const contactConfig = {
     YOUR_EMAIL: "carlosviniharo@gmail.com",
-    YOUR_PHONE: "(593)963149805",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
+    YOUR_PHONE: "+16043799751",
+    description: "Thank you for get in contact with me, I will get back to you as soon as possible",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
     YOUR_SERVICE_ID: "service_lqvcikq",
