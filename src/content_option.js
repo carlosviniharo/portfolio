@@ -11,7 +11,7 @@ const introdata = {
         second: "I am a huge fan of Python",
         third: "If you want to build an application I am your backend developer.",
     },
-    description: "I am a sofware engineer interested in develop application and chatbots in Python",
+    description: "I am a software engineer interested in developing applications and chatbots in Python",
     your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
 
