@@ -37,7 +37,7 @@ const worktimeline = [{
     {
         jobtitle: "AI Trainer",
         where: "Outlier",
-        date: "2025 - 2026",
+        date: "2024 - Present",
     }
 ];
 
