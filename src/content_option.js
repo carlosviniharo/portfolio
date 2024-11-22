@@ -16,8 +16,8 @@ const introdata = {
 };
 
 const dataabout = {
-    title: "A bit about my self",
-    aboutme: "",
+    title: "Who I Am?",
+    aboutme: "I am a normal developer who is looking for to contribute to the world by developing software that can change the life of people.",
 };
 const worktimeline = [{
         jobtitle: "Software Engineer",
@@ -26,14 +26,19 @@ const worktimeline = [{
     },
     {
         jobtitle: "Robotics Tutor",
-        where: "High",
+        where: "Republic of Ecuador High School",
         date: "2022",
     },
     {
         jobtitle: "Backend Software Developer",
-        where: "Jakayv S.A",
+        where: "Jakay S.A",
         date: "2023 - 2024",
     },
+    {
+        jobtitle: "AI Trainer",
+        where: "Outlier",
+        date: "2025 - 2026",
+    }
 ];
 
 const skills = [{
