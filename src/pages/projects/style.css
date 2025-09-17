@@ -1,80 +1,101 @@
-.po_items_ho {
-    column-width: 15em;
-    -moz-column-width: 15em;
-    -webkit-column-width: 15em;
-    column-gap: 4rem;
-    -moz-column-gap: 4rem;
-    -webkit-column-gap: 4rem;
+/* ===== Swiper container padding ===== */
+.swiper {
+    padding-bottom: 40px;
 }
 
+/* ===== Swiper slide wrapper ===== */
+.swiper-slide {
+    display: flex;            /* make it a flex container */
+    justify-content: center;  /* center the content horizontally */
+    align-items: center;      /* center vertically */
+}
+
+/* ===== Portfolio slide ===== */
+/* Portfolio slide */
 .po_item {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    margin: 0.5rem auto;
-    position: relative;
+    width: 300px;            
+    height: 400px;           
     background: var(--secondary-color);
-    padding: 6px;
     border: 1px solid var(--secondary-color);
+    position: relative;
+    overflow: hidden;
     transition: 0.3s ease;
-    font-size: 0;
-    min-height: 300px;
+
+    display: flex;           /* make flex container */
+    flex-direction: column;
+    justify-content: center; /* vertical center */
+    align-items: center;     /* horizontal center */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+/* Image scales properly and centered */
 .po_item img {
-    max-width: 100%;
+    max-width: 80%;          /* scale down if needed */
+    max-height: 60%;         /* take up max 60% of slide height */
+    object-fit: contain;     /* preserve aspect ratio without cropping */
+    display: block;
 }
 
+/* ===== Overlay content ===== */
 .po_item .content {
     position: absolute;
-    height: 0;
-    width: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: var(--overlay-color);
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
-    transition: 0.3s ease-in-out;
+    background: var(--overlay-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     opacity: 0;
-    border: 1px solid black;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-.po_item .content {
-    opacity: 0;
-    transition-delay: 1s;
-    transition: 0.3s ease;
-    font-size: 20px;
-}
-
-.po_item:hover {
-    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25);
-}
-
-.po_item:hover .content {
-    height: calc(100% - 30px);
-    width: calc(100% - 30px);
-    opacity: 1;
-}
-
+/* ===== Show overlay on hover ===== */
 .po_item:hover .content {
     opacity: 1;
-    color: var(--secondary-color);
+}
+
+/* ===== Content text & link styling ===== */
+.po_item .content p {
+    margin: 0 0 10px 0;
+    color: var(--text-color);
+    font-size: 1rem;
 }
 
 .po_item .content a {
     background: var(--bg-color);
     border: solid 1px var(--text-color);
     padding: 4px 8px;
-    text-align: center;
-    font-size: 1rem;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    border-radius: 4px;
+    transition: 0.2s ease;
 }
 
 .po_item .content a:hover {
-    text-decoration: none;
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+/* ===== Swiper navigation arrows ===== */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #dfe2e9 !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 20px;
+}
+
+/* ===== Optional: hover shadow effect ===== */
+.po_item:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
 }

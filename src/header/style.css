@@ -2,6 +2,7 @@
     top: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    
 }
 
 .navbar {
@@ -14,6 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
   }
 
 .menu__button {
@@ -40,6 +42,7 @@
     background: var(--primary-color);
     font-size: 1.25rem;
     font-family: Marcellus;
+    opacity: 0.9;
     color: var(--text-color-2);
     line-height: 2;
     height: 50px;
@@ -208,10 +211,16 @@
 }
 
 .menu_footer {
+    position: fixed;
+    left: 0;
     bottom: 0;
+    width: 100%;
     font-family: Marcellus;
     font-size: 14px;
-    background: var(--primary-color);
+    opacity: 0.5;
+    /* background: var(--primary-color); */
+    background: transparent;
+    z-index: 1000; /* keep it above decorative divs */
 }
 
 .menu_footer a {
