@@ -78,3 +78,22 @@
 .po_item .content a:hover {
     text-decoration: none;
 }
+.swiper {
+    padding-bottom: 40px;
+  }
+  
+  .swiper-slide {   
+    display: inline-block;
+    justify-content: center;
+  }
+  /* Change Swiper navigation arrows color */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #dfe2e9 !important; /* e.g. Tailwind's gray-900 */
+}
+
+/* Optional: custom size */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px; /* adjust size if needed */
+}

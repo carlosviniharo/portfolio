@@ -3,6 +3,11 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 export const Projects = () => {
   return (
@@ -19,22 +24,34 @@ export const Projects = () => {
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
-        <div>
-          <h1>Working on it</h1> 
-        </div>
-        {/* <div className="mb-5 po_items_ho">
-          {dataportfolio.map((data, i) => {
-            return (
-              <div key={i} className="po_item">
-                <img src={data.img} alt="" />
+        <div className="portfolio-carousel mb-5"> 
+          <Swiper
+            modules={[Navigation, Pagination]}
+            spaceBetween={20}
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+            loop
+          >
+            {dataportfolio.map((data, i) => (
+              <SwiperSlide key={i}>
+              <div className="po_item">
+                <img 
+                src={data.img} 
+                alt={`Project ${i}`}
+
+                />
                 <div className="content">
                   <p>{data.description}</p>
-                  <a href={data.link}>view project</a>
+                  <a href={data.link} target="_blank" rel="noopener noreferrer">
+                    View Project
+                  </a>
                 </div>
               </div>
-            );
-          })}
-        </div> */}
+            </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </Container>
     </HelmetProvider>
   );

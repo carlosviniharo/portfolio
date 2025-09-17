@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation  } from "react-router-dom";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
 import { logotext ,socialprofils } from "../content_option";
@@ -8,10 +8,17 @@ import Themetoggle from "../components/themetoggle";
 const Headermain = () => {
 
   const [isActive, setActive] = useState("false");
+  const location = useLocation();
 
   const handleToggle = () => {
     setActive(!isActive);
     document.body.classList.toggle("ovhidden");
+  };
+
+  const handleLogoClick = (e) => {
+    if (location.pathname === "/") {
+      e.preventDefault(); // stay on home
+    }
   };
 
 
@@ -19,8 +26,12 @@ const Headermain = () => {
     <>
       <header className="fixed-top site__header">
         <div className="navbar d-flex align-items-center justify-content-between">
-          <Link className="navbar-brand nav_ac" to="/">
-            {logotext}
+          <Link 
+            className="navbar-brand nav_ac" 
+            to="/"
+            onClick={handleLogoClick}
+          >
+          {logotext}
           </Link>
           <div className="d-flex align-items-center">
           <Themetoggle />
@@ -51,21 +62,16 @@ const Headermain = () => {
               </div>
             </div>
           </div>
-          <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
-            <div className="d-flex">
-            <a href={socialprofils.facebook}>Facebook</a>
-            <a href={socialprofils.github}>Github</a>
-            <a href={socialprofils.twitter}>Twitter</a>
-            </div>
-            <p className="copyright m-0">copyright - {logotext}</p>
-          </div>
         </div>
       </header>
       <div className="br-top"></div>
       <div className="br-bottom"></div>
       <div className="br-left"></div>
       <div className="br-right"></div>
-      
+      <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center w-100 p-3">
+        <div className="d-flex"></div>
+        <p className="copyright m-0">copyright - {logotext}</p>
+      </div>
     </>
   );
 };

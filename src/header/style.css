@@ -208,10 +208,14 @@
 }
 
 .menu_footer {
+    position: fixed;
+    left: 0;
     bottom: 0;
+    width: 100%;
     font-family: Marcellus;
     font-size: 14px;
     background: var(--primary-color);
+    z-index: 1000; /* keep it above decorative divs */
 }
 
 .menu_footer a {
