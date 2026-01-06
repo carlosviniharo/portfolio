@@ -32,7 +32,7 @@ const worktimeline = [{
     {
         jobtitle: "Backend Software Developer",
         where: "Jakay S.A",
-        date: "2023 - 2024",
+        date: "2022 - 2024",
     },
     {
         jobtitle: "AI Trainer",
